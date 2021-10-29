@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <title>Animal sounds recognition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<center>
+    <div>
+<h1 style="font-family: cursive;">Sound controlled animals </h1>
+<h4>Note:   Play different sounds like barking and meowing.</h4>
+<button class="btn btn-info" onclick="start()">START</button>
+<h3 style="font-family: fantasy;">I can hear - </h3>
+<br>
+<span>
+  <label>Sound Identified is</label>
+  <label id="voice_name"></label>
+</span>
+<span>
+  <label> Sound Detected is </label>
+  <label id="percent"></label>
+</span>
+<br>
+<br>
+<img id="ear" src="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/512x512/plain/ear.png">
+</div>
+</center>
+<script src="script.js"></script>
+</body>
+</html>
